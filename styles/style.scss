@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+.svg-group-1 {
+  position: absolute;
+  right: -35%;
+  top: -40%;
+}
+.svg-group-2 {
+  position: absolute;
+  left: 63px;
+  top: 69px;
+}
+.header {
+  background-color: rgb(225, 255, 143);
+  height: 800px;
+}
+.welcome {
+  &__message {
+    width: 768px;
+    margin-left: 120px;
+    padding-top: 196px;
+    &_header {
+      color: rgb(32, 32, 39);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 78px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    &_text {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-top: 24px;
+    }
+  }
+}
