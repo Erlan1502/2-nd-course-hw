@@ -5,16 +5,37 @@
   font-family: Montserrat;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .svg-group-1 {
   position: absolute;
-  right: -35%;
-  top: -40%;
+  right: -488px;
+  top: -333px;
 }
 
 .svg-group-2 {
   position: absolute;
   left: 63px;
   top: 69px;
+}
+
+.svg-star-1 {
+  position: absolute;
+  right: -100px;
+  top: 77px;
+}
+.svg-star-2 {
+  position: absolute;
+  left: 25px;
+  top: 770px;
+}
+.svg-star-3 {
+  position: absolute;
+  left: 40px;
+  top: 822px;
 }
 
 .header {
@@ -56,8 +77,9 @@
 }
 
 .welcome__message {
+  position: relative;
+  z-index: 2;
   width: 768px;
-  margin-left: 120px;
   padding-top: 196px;
 }
 .welcome__message_header {
@@ -117,25 +139,56 @@
   color: black;
 }
 
-.games {
+.main {
+  position: relative;
   background: rgb(32, 32, 39);
+}
+.main__message {
+  position: relative;
+  z-index: 2;
+  padding-top: 94px;
+}
+.main__message_header {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.main__message_text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 788px;
+  height: 96px;
+}
+
+.games {
   height: 1242px;
   width: 100%;
 }
 .games__block {
+  position: relative;
+  z-index: 2;
   width: 1201px;
-  padding-left: 119px;
-  padding-right: 123px;
-  padding-top: 94px;
+  padding-top: 72px;
   padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  color: rgb(32, 32, 39);
 }
 .games__block_card:hover {
   transform: scale(1.05);
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .games__block_card {
   display: flex;
@@ -143,6 +196,7 @@
   border-radius: 30px;
   background-color: white;
   flex-direction: column;
+  transition: transform 0.5s ease;
 }
 .games__block_card_image_1 {
   width: 100%;
