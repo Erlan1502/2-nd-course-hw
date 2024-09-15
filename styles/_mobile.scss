@@ -1,0 +1,224 @@
+@media (max-width: 650px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .svg-group-1 {
+    display: none;
+  }
+  .svg-group-2 {
+    display: none;
+  }
+  .svg-star {
+    &-1 {
+      display: none;
+    }
+    &-2 {
+      display: none;
+    }
+    &-3 {
+      display: none;
+    }
+  }
+  .mobile-star-1 {
+    display: inline;
+    position: absolute;
+    right: -112px;
+    top: -104px;
+  }
+  .mobile-star-2 {
+    display: inline;
+    position: absolute;
+    left: 38px;
+    top: 97px;
+  }
+  .mobile-star-3 {
+    display: inline;
+    position: absolute;
+    left: 92px;
+    top: 64px;
+  }
+  .mobile-star-4 {
+    display: inline;
+    position: absolute;
+    bottom: 79px;
+    right: 34px;
+  }
+  .mobile-star-5 {
+    display: inline;
+    position: absolute;
+    bottom: 125px;
+    right: 86px;
+  }
+  .header {
+    overflow: hidden;
+    max-width: 100vw;
+    &__advisor {
+      max-width: 100%;
+      overflow-x: auto;
+      height: 50px;
+      &_block {
+        margin-top: 16px;
+        &_text {
+          white-space: nowrap;
+          color: rgb(32, 32, 39);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 4%;
+          text-align: left;
+          text-transform: uppercase;
+          margin-left: 28px;
+        }
+        &_star {
+          margin-left: 28px;
+          transform: scale(0.5);
+          transform-origin: top;
+        }
+      }
+    }
+  }
+  .welcome {
+    &__message {
+      width: 100%;
+      display: flex;
+      padding-top: 147px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &_header {
+        padding-left: 16px;
+        padding-right: 16px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+      &_text {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+      &_button {
+        margin-top: 36px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        width: 285px;
+        height: 55px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+      &_button > a {
+        margin-top: 8px;
+      }
+    }
+  }
+  .main {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    &__message {
+      &_header {
+        display: none;
+        &_mobile {
+          display: flex;
+          color: rgb(255, 255, 255);
+          font-family: Montserrat;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 49px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+      }
+      &_text {
+        display: none;
+      }
+    }
+  }
+  .games {
+    &__block {
+      padding-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(50px, 1fr));
+      gap: 24px;
+      width: 100%;
+      &_card {
+        height: auto;
+        &_info {
+          height: auto;
+          margin-left: 28px;
+          margin-top: 28px;
+          margin-bottom: 32px;
+          margin-right: 28px;
+          &_number {
+            display: none;
+          }
+          &_game-button {
+            display: flex;
+            margin-top: 36px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            width: 285px;
+            height: 55px;
+
+            justify-content: space-around;
+          }
+          &_game-button > a {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 16px;
+          }
+          &_description {
+            margin-top: 16px;
+            display: flex;
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+          &_text {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .footer_rights {
+    margin-top: 48px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}

@@ -153,6 +153,9 @@
       letter-spacing: 0px;
       text-align: left;
       margin-bottom: 24px;
+      &_mobile {
+        display: none;
+      }
     }
     &_text {
       color: rgb(255, 255, 255);
@@ -264,7 +267,46 @@
           text-align: left;
           margin-top: 16px;
         }
+        &_game-button {
+          display: none;
+        }
+        &_description {
+          display: none;
+        }
       }
     }
   }
 }
+footer {
+  display: flex;
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__rights {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.mobile-star-1 {
+  display: none;
+}
+.mobile-star-2 {
+  display: none;
+}
+.mobile-star-3 {
+  display: none;
+}
+.mobile-star-4 {
+  display: none;
+}
+.mobile-star-5 {
+  display: none;
+}
+@import "tablet";
+@import "mobile";
