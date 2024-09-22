@@ -55,7 +55,6 @@
     max-width: 100vw;
     &__advisor {
       max-width: 100%;
-      overflow-x: auto;
       height: 50px;
       &_block {
         margin-top: 16px;
@@ -220,5 +219,8 @@
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+  }
+  .mini {
+    display: none;
   }
 }

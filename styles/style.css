@@ -37,11 +37,32 @@
   left: 40px;
   top: 822px;
 }
+.svg-star-6 {
+  position: absolute;
+  left: 1320px;
+  top: 126px;
+}
+.svg-star-7 {
+  position: absolute;
+  left: 1277px;
+  top: 93px;
+}
+.svg-star-8 {
+  position: absolute;
+  left: 1249px;
+  bottom: 45px;
+}
+.svg-star-10 {
+  position: absolute;
+  left: 1319px;
+  bottom: 65px;
+}
 
 .header {
   background-color: rgb(225, 255, 143);
   height: 800px;
   position: relative;
+  overflow: hidden;
 }
 .header__advisor {
   box-sizing: border-box;
@@ -142,6 +163,7 @@
 .main {
   position: relative;
   background: rgb(32, 32, 39);
+  overflow: hidden;
 }
 .main__message {
   position: relative;
@@ -174,7 +196,7 @@
 }
 
 .games {
-  height: 1242px;
+  height: auto;
   width: 100%;
 }
 .games__block {
@@ -277,6 +299,133 @@
   display: none;
 }
 
+.mini {
+  position: relative;
+}
+.mini__header {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 46px;
+  margin-bottom: 72px;
+}
+.mini__block {
+  display: grid;
+  gap: 32px;
+  padding-bottom: 144px;
+  grid-template-columns: repeat(1, minmax(50px, 1fr));
+}
+.mini__block_card {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.mini__block_card_picture_1 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/first-card.png");
+}
+.mini__block_card_picture_2 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/second-card.png");
+}
+.mini__block_card_picture_3 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/third-card.png");
+}
+.mini__block_card_picture_4 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/fourth-card.png");
+}
+.mini__block_card_picture_5 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/fifth-card.png");
+}
+.mini__block_card_picture_6 {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  background-image: url("../images/sixth-card.png");
+}
+.mini__block_card_description {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 48px;
+}
+.mini__block_card_description_name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.mini__block_card_description_text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.mini__block_card_description_game-button {
+  display: flex;
+  margin-top: 36px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  width: 247px;
+  height: 66px;
+  justify-content: space-around;
+}
+.mini__block_card_description_game-button > a {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+}
+.mini__block_card_description_game-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.mini__block_card_description_game-button:hover a {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
 footer {
   display: flex;
   background-color: rgb(189, 237, 53);
@@ -371,7 +520,6 @@ footer {
   }
   .header__advisor {
     max-width: 100%;
-    overflow-x: auto;
     height: 50px;
   }
   .header__advisor_block {
@@ -528,5 +676,8 @@ footer {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+  }
+  .mini {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
