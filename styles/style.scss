@@ -35,11 +35,32 @@
     left: 40px;
     top: 822px;
   }
+  &-6 {
+    position: absolute;
+    left: 1320px;
+    top: 126px;
+  }
+  &-7 {
+    position: absolute;
+    left: 1277px;
+    top: 93px;
+  }
+  &-8 {
+    position: absolute;
+    left: 1249px;
+    bottom: 45px;
+  }
+  &-10 {
+    position: absolute;
+    left: 1319px;
+    bottom: 65px;
+  }
 }
 .header {
   background-color: rgb(225, 255, 143);
   height: 800px;
   position: relative;
+  overflow: hidden;
   &__advisor {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -140,6 +161,7 @@
   // z-index: -2;
   position: relative;
   background: rgb(32, 32, 39);
+  overflow: hidden;
   &__message {
     position: relative;
     z-index: 2;
@@ -153,6 +175,9 @@
       letter-spacing: 0px;
       text-align: left;
       margin-bottom: 24px;
+      &_mobile {
+        display: none;
+      }
     }
     &_text {
       color: rgb(255, 255, 255);
@@ -168,7 +193,7 @@
   }
 }
 .games {
-  height: 1242px;
+  height: auto;
   width: 100%;
   &__block {
     position: relative;
@@ -264,7 +289,175 @@
           text-align: left;
           margin-top: 16px;
         }
+        &_game-button {
+          display: none;
+        }
+        &_description {
+          display: none;
+        }
       }
     }
   }
 }
+.mini {
+  position: relative;
+  &__header {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 46px;
+    margin-bottom: 72px;
+  }
+  &__block {
+    display: grid;
+    gap: 32px;
+    padding-bottom: 144px;
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+    &_card {
+      display: flex;
+      width: 1200px;
+      height: 500px;
+      border-radius: 30px;
+      box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+      background: rgb(255, 255, 255);
+      &_picture {
+        &_1 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/first-card.png");
+        }
+        &_2 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/second-card.png");
+        }
+        &_3 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/third-card.png");
+        }
+        &_4 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/fourth-card.png");
+        }
+        &_5 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/fifth-card.png");
+        }
+        &_6 {
+          width: 50%;
+          height: 500px;
+          border-radius: 30px;
+          background-image: url("../images/sixth-card.png");
+        }
+      }
+      &_description {
+        box-sizing: border-box;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10;
+        padding: 48px;
+        &_name {
+          color: rgb(32, 32, 39);
+          font-family: Montserrat;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 59px;
+          letter-spacing: 0px;
+          text-align: left;
+          margin-bottom: 24px;
+        }
+        &_text {
+          color: rgb(32, 32, 39);
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+        &_game-button {
+          display: flex;
+          margin-top: 36px;
+          box-sizing: border-box;
+          border: 1px solid rgb(32, 32, 39);
+          border-radius: 60px;
+          background: rgb(32, 32, 39);
+          width: 247px;
+          height: 66px;
+
+          justify-content: space-around;
+        }
+        &_game-button > a {
+          color: rgb(255, 255, 255);
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 141.69%;
+          letter-spacing: 0%;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 16px;
+        }
+        &_game-button:hover {
+          cursor: pointer;
+          background-color: white;
+          color: black;
+          a {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__rights {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.mobile-star-1 {
+  display: none;
+}
+.mobile-star-2 {
+  display: none;
+}
+.mobile-star-3 {
+  display: none;
+}
+.mobile-star-4 {
+  display: none;
+}
+.mobile-star-5 {
+  display: none;
+}
+@import "tablet";
+@import "mobile";
