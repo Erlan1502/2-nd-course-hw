@@ -31,18 +31,12 @@ while (n > 50) {
 console.log(
   "Итоговое число :" + `${n}` + "\nКоличество делений :" + `${count}`
 );
-//6
+//6 изм*
 let friday = Math.round(Math.random() * 7);
-let day = 1;
-let fridayCount = 0;
-while (day <= 31) {
-  if (day == friday) {
-    fridayCount++;
-    console.log(
-      "Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет."
-    );
-    friday += 7;
-  }
-  day++;
+
+for (friday; friday <= 31; friday += 7) {
+  console.log(
+    "Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет."
+  );
 }
-// Для изменений
+//
