@@ -34,3 +34,32 @@ function tryToGuessNumber() {
     }
   }
 }
+
+function simpleArythmetics() {
+  let rightAnswer;
+  let expression = Math.random() * 100;
+  let symbol;
+  let number1 = Math.round(Math.random() * 100);
+  let number2 = Math.round(Math.random() * 100);
+  if (expression <= 25) {
+    symbol = `+`;
+    rightAnswer = number1 + number2;
+  } else if (expression > 25 && expression <= 50) {
+    symbol = `-`;
+    rightAnswer = number1 - number2;
+  } else if (expression > 50 && expression <= 75) {
+    symbol = `*`;
+    rightAnswer = number1 * number2;
+  } else if (expression > 75 && expression <= 100) {
+    symbol = `/`;
+    rightAnswer = number1 / number2;
+  }
+  let userAnswer = prompt(
+    "Сколько будет " + `${number1}` + ` ${symbol} ` + `${number2}`
+  );
+  if (Number(userAnswer) === rightAnswer) {
+    alert("Верно!");
+  } else {
+    alert("Неверно!");
+  }
+}
