@@ -71,7 +71,7 @@ const arrRandomized = [1, 2, 3, 8, 7, 6, 4, 5, 9];
 let sumIteration = 0;
 for (let item of arrRandomized) {
   sumIteration = sumIteration + item;
-  console.log(`${sumIteration}`);
+  console.log(`${sumIteration - item}` + " + " + `${item}`);
 }
 
 //11
@@ -118,4 +118,5 @@ let summOfGenerated = generatedArray2.reduce(
   (accumulator, current) => accumulator + current,
   0
 );
-alert(summOfGenerated);
+let foundAverage = summOfGenerated / generatedArray2.length;
+alert(Math.round(foundAverage * 100) / 100);

@@ -37,29 +37,40 @@ function tryToGuessNumber() {
 
 function simpleArythmetics() {
   let rightAnswer;
-  let expression = Math.random() * 100;
+  let expression = Math.random() * 4;
   let symbol;
   let number1 = Math.round(Math.random() * 100);
   let number2 = Math.round(Math.random() * 100);
-  if (expression <= 25) {
+  if (expression <= 1) {
     symbol = `+`;
     rightAnswer = number1 + number2;
-  } else if (expression > 25 && expression <= 50) {
+  } else if (expression > 1 && expression <= 2) {
     symbol = `-`;
     rightAnswer = number1 - number2;
-  } else if (expression > 50 && expression <= 75) {
+  } else if (expression > 2 && expression <= 3) {
     symbol = `*`;
     rightAnswer = number1 * number2;
-  } else if (expression > 75 && expression <= 100) {
+  } else if (expression > 3 && expression <= 4) {
     symbol = `/`;
-    rightAnswer = number1 / number2;
+    rightAnswer = Math.round((number1 / number2) * 100) / 100;
   }
-  let userAnswer = prompt(
-    "Сколько будет " + `${number1}` + ` ${symbol} ` + `${number2}`
-  );
+  let userAnswer;
+  if (symbol === `/`) {
+    userAnswer = prompt(
+      "Сколько будет " +
+        `${number1}` +
+        ` ${symbol} ` +
+        `${number2}` +
+        " Ответ запиши до сотых в большую сторону. \nПример: 7/4 = 1.75"
+    );
+  } else {
+    userAnswer = prompt(
+      "Сколько будет " + `${number1}` + ` ${symbol} ` + `${number2}`
+    );
+  }
   if (Number(userAnswer) === rightAnswer) {
     alert("Верно!");
   } else {
-    alert("Неверно!");
+    alert("Неверно! Правильный ответ: " + `${rightAnswer}`);
   }
 }
