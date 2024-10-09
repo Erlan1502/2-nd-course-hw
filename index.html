@@ -631,19 +631,22 @@
 
         <h1 class="mini__header">Мини-игры</h1>
         <div class="mini__block">
-          <div class="mini__block_card">
+          <div id="first-game" class="mini__block_card">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">Угадай число</div>
               <div class="mini__block_card_description_text">
                 Попробуй угадать случайное число от 1 до 100.
               </div>
-              <div class="mini__block_card_description_game-button">
+              <div
+                class="mini__block_card_description_game-button"
+                onclick="tryToGuessNumber();"
+              >
                 <a href="#game_1">Играть!</a>
               </div>
             </div>
             <div class="mini__block_card_picture_1"></div>
           </div>
-          <div class="mini__block_card">
+          <div id="second-game" class="mini__block_card_reversed">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">
                 Простая арифметика
@@ -651,13 +654,16 @@
               <div class="mini__block_card_description_text">
                 Попробуй решить простые арифметические задачи.
               </div>
-              <div class="mini__block_card_description_game-button">
+              <div
+                class="mini__block_card_description_game-button"
+                onclick="simpleArythmetics();"
+              >
                 <a href="#game_2">Играть!</a>
               </div>
             </div>
             <div class="mini__block_card_picture_2"></div>
           </div>
-          <div class="mini__block_card">
+          <div id="third-game" class="mini__block_card">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">
                 Переверни текст
@@ -671,7 +677,7 @@
             </div>
             <div class="mini__block_card_picture_3"></div>
           </div>
-          <div class="mini__block_card">
+          <div id="fourth-game" class="mini__block_card_reversed">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">
                 Камень, Ножницы, Бумага
@@ -685,7 +691,7 @@
             </div>
             <div class="mini__block_card_picture_4"></div>
           </div>
-          <div class="mini__block_card">
+          <div id="fifth-game" class="mini__block_card">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">
                 Простая викторина
@@ -699,7 +705,7 @@
             </div>
             <div class="mini__block_card_picture_5"></div>
           </div>
-          <div class="mini__block_card">
+          <div id="sixth-game" class="mini__block_card">
             <div class="mini__block_card_description">
               <div class="mini__block_card_description_name">
                 Генератор случайных цветов
@@ -720,5 +726,6 @@
     <footer class="footer center">
       <div class="footer__rights">Все права защищены.</div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
