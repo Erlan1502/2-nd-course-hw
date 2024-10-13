@@ -74,3 +74,47 @@ function simpleArythmetics() {
     alert("Неверно! Правильный ответ: " + `${rightAnswer}`);
   }
 }
+
+function reverseText() {
+  let notReversedText = prompt(
+    "Попробуйте задать текст, для того чтобы перевернуть его!"
+  );
+  let arrayWord = notReversedText.toUpperCase().split("");
+  let reversedArrayWord = arrayWord.reverse();
+  let reversedText = reversedArrayWord.join("");
+  alert("Вот перевернутый текст! : " + reversedText);
+}
+function easyQuiz() {
+  const quiz = [
+    {
+      question: "Какой цвет небо?",
+      options: ["1. Красный", "2. Синий", "3. Зеленый"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1. Шесть", "2. Семь", "3. Восемь"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1. Четыре", "2. Пять", "3. Шесть"],
+      correctAnswer: 2,
+    },
+  ];
+  alert("Викторина начинается!");
+  let score = 0;
+  for (let item of quiz) {
+    let questionText = item.question + "\n" + item.options.join("\n");
+
+    let answer = Number(prompt(questionText));
+
+    if (answer === item.correctAnswer) {
+      alert("Правильно!");
+      score++;
+    } else {
+      alert("Неправильно.");
+    }
+  }
+  alert("Викторина завершена! Ваш результат: " + score + " из " + quiz.length);
+}
