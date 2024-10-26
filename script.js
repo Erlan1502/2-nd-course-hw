@@ -118,3 +118,36 @@ function easyQuiz() {
   }
   alert("Викторина завершена! Ваш результат: " + score + " из " + quiz.length);
 }
+
+function stoneScissorsPaper() {
+  const gameChoices = ["камень", "ножницы", "бумага"];
+  let userChoicePrompt = prompt("Камень, Ножницы или Бумага? Выбери одно.");
+  let variableIndex = Math.round(Math.random() * 2);
+  let computerChoice = gameChoices[variableIndex];
+  let userChoiceClear = userChoicePrompt.toLowerCase();
+  function winnerCheck(computerChoice, userChoiceClear) {
+    if (computerChoice === userChoiceClear) {
+      return alert("Ничья!");
+    } else if (
+      (computerChoice === "камень" && userChoiceClear === "ножницы") ||
+      (computerChoice === "ножницы" && userChoiceClear === "бумага") ||
+      (computerChoice === "бумага" && userChoiceClear === "камень")
+    ) {
+      return alert("Компьютер победил!");
+    } else if (
+      (userChoiceClear === "камень" && computerChoice === "ножницы") ||
+      (userChoiceClear === "ножницы" && computerChoice === "бумага") ||
+      (userChoiceClear === "бумага" && computerChoice === "камень")
+    ) {
+      return alert("Вы победили!");
+    } else {
+      return alert(
+        "Неверный выбор. Пожалуйста, выберите Камень, Ножницы или Бумага."
+      );
+    }
+  }
+
+  console.log(`Компьютер выбрал: ${computerChoice}`);
+  console.log(`Вы выбрали: ${userChoiceClear}`);
+  console.log(winnerCheck(computerChoice, userChoiceClear));
+}
