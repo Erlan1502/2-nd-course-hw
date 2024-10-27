@@ -1,0 +1,168 @@
+<!--//1
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <button class="btn">Скрыть кнопку</button>
+    <script>
+      const heading = document.querySelector("h1");
+      const toggleButton = document.querySelector(".btn");
+
+      toggleButton.addEventListener("click", () => {
+        if (heading.style.display === "none") {
+          heading.style.display = "block";
+          toggleButton.textContent = "Скрыть";
+        } else {
+          heading.style.display = "none";
+          toggleButton.textContent = "Показать";
+        }
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//2
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Изменить цвет</button>
+    <script>
+      const btnEl = document.querySelector(".btn");
+      const paragraphEl = document.querySelector(".paragraph");
+      btnEl.addEventListener("click", () => {
+        paragraphEl.style.color = "blue";
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//3
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">Lorem ipsum dolor sit amet.</h1>
+    <button class="btn">Изменить текст</button>
+    <script>
+      const headingEl = document.querySelector(".heading");
+      const btnEl = document.querySelector(".btn");
+      btnEl.addEventListener("click", () => {
+        headingEl.textContent = "Привет, мир!";
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//4
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Изменить текст</button>
+    <script>
+      const descriptionElements = document.querySelectorAll(".description");
+      const btnEl = document.querySelector(".btn");
+      btnEl.addEventListener("click", () => {
+        descriptionElements.forEach((description) => {
+          description.textContent = "Измененный текст";
+        });
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//5
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="paragraph_1">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph_3">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Изменить текст</button>
+    <script>
+      const descriptionElements = document.querySelectorAll(".description");
+      const btnEl = document.querySelector(".btn");
+      btnEl.addEventListener("click", () => {
+        descriptionElements.forEach((description) => {
+          description.textContent = "Новый текст";
+        });
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//6
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn">Добавить элемент</button>
+    <div class="content"></div>
+    <script>
+      const btnEl = document.querySelector(".btn");
+      btnEl.addEventListener("click", () => {
+        const paragraphEl = document.createElement("p");
+        paragraphEl.textContent = "Новый абзац";
+        paragraphEl.classList.add("paragraph");
+        const contentEl = document.querySelector(".content");
+        contentEl.appendChild(paragraphEl);
+      });
+    </script>
+  </body>
+</html>
+-->
+<!--//7
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Удалить элемент</button>
+    <script>
+      const btnEl = document.querySelector(".btn");
+      btnEl.addEventListener("click", () => {
+        const descriptionEl = document.querySelector(".description");
+        descriptionEl.remove();
+      });
+    </script>
+  </body>
+</html>
+-->
