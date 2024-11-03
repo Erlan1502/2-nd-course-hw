@@ -151,3 +151,18 @@ function stoneScissorsPaper() {
   console.log(`Вы выбрали: ${userChoiceClear}`);
   console.log(winnerCheck(computerChoice, userChoiceClear));
 }
+
+function changeColor() {
+  let firstParameter = Math.round(Math.random() * 255);
+  let secondParameter = Math.round(Math.random() * 255);
+  let thirdParameter = Math.round(Math.random() * 255);
+  const btnEl = document.querySelector(
+    ".mini__block_card_description_game-button_changed"
+  );
+  btnEl.addEventListener("click", () => {
+    const backgroundEl = document.querySelectorAll(".main, .footer, .header");
+    backgroundEl.forEach((element) => {
+      element.style.background = `rgb(${firstParameter}, ${secondParameter}, ${thirdParameter})`;
+    });
+  });
+}
